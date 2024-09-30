@@ -1,456 +1,487 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Nanum Gothic Coding", system-ui;
-    font-weight: 100%;
-    font-style: normal;
-    background-color: #c9c8c8; 
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    height: 64px;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.logo_home{
-    display: flex;
-    align-items: center;
-}
-
-.logo_home img {
-    height: 32px;
-    margin-right: 8px;
-}
-
-.logo_home span {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo_home .academy {
-    color: gray;
-    font-weight: normal;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 24px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    color: #0dd6fa; 
-}
-
-.Home-page h3 {
-    color: #6b4e16;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.Home-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    border-radius: 5px; /* ขอบมน */
-
-}
-
-.Home-item {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.Home-item img {
-    width: 50%;
-    height: auto;
-    border-radius: 5px;
-    margin-left: 24px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.Home-item span {
-    width: 50%;
-    height: auto;
-    margin-left: 0px;
-}
-
-.Home-item h1 {
-    margin: 2%;
-    padding: 1%;
-}
-
-.Home-item a {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #333;
-    padding: 1rem;
-}
-
-.Home-item a:hover {
-    color: #0dd6fa; 
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-.page1-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px;
-    background-color: #ffffff;
-}
-
-.content-container {
-    display: flex;
-    width: 50%; /* Main section width */
-    margin-right: 40px;
-}
-
-.main1-image img {
-    width: 105%;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 24px;
-}
-
-.text-content {
-    padding: 24px;
-}
-
-.text-content h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 32px;
-}
-
-.text-content p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 24px;
-}
-
-.text-content span {
-    font-size: 1rem;
-    color: #888;
-}
-
-.side1-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    width: 50%; /* Side content width */
-}
-
-.box {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 24px;
-    padding: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.box img {
-    width: 35%;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 16px;
-}
-
-.text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    align-items: center;     /* จัดให้อยู่กึ่งกลางแนวนอน */
-    text-align: center;      /* จัดข้อความให้อยู่กึ่งกลางในบล็อก */
-    height: 100%;            /* ให้บล็อกมีความสูงเต็มพื้นที่ */
-    width: 100%;
-}
-
-.text-box h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.text-box p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.text-box a {
-    color: #0dd6fa;
-    font-size: 1rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-.text-box a:hover {
-    text-decoration: underline;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-.page2-header {
-    text-align: center;
-    margin: 50px 0;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 32px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 32px; /* Spacing between grid items */
-    padding: 0 72px; /* Padding on the sides */
-}
-
-.grid-item {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.course-info {
-    padding: 16px;
-}
-
-.course-info h2 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-}
-
-.course-info p {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    font-style: Bold;
-}
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-.page3-header{
-    background-color: white;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 32px;
-    text-align: center;
-    padding-top: 32px;
-}
-
-.content-area {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 32px;
-}
-
-/* Video section styling */
-.video-section {
-    flex: 60%;
-    padding-left: 24px;
-}
-
-.video-section iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-/* Right column content */
-.right-column {
-    flex: 40%; /* 40% of the space */
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-right: 15px;
-}
-
-/* Individual content blocks */
-.content-block {
-    display: flex;
-    gap: 16px;
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content-block img {
-    width: 35%;
-    border-radius: 8px;
-}
-
-.content-text {
-    flex-grow: 1;
-}
-
-.content-text h2 {
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.content-text p {
-    font-size: 1rem;
-    text-align: center;
-}
-
-/* Bottom text styling */
-.bottom-text {
-    margin-top: 32px;
-}
-
-.bottom-text h2 {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    padding-left: 24px;
-}
-
-.bottom-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    padding-left: 24px;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #000000;
-}
-
-footer .terms-section {
-    display: flex;
-    gap: 20px; /* ระยะห่างระหว่าง Terms กับ Privacy */
-}
-
-footer .terms {
-    color: #000000;
-    cursor: pointer;
-}
-
-footer .terms:hover {
-    text-decoration: underline;
-}
-
-/* ให้แน่ใจว่าฟุตเตอร์อยู่ที่ด้านล่างของหน้าจอ */
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-footer {
-    margin-top: auto;
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-/* Media Queries for iPhone 12 Pro Max (390px x 844px) */
-
-@media (max-width: 400px) {
-    header {
-        flex-direction: column;  /* Stack the logo and navigation vertically */
-        padding: 10px 16px;
-        height: auto;
+/* style.css for Desktop Web brownser*/
+@media (max-width: 2000px) {
+    .main-header{
+        display:none;
     }
 
-    .logo_home {
-        justify-content: center;
-        margin-bottom: 10px;
+    .section-banner{
+        display: none;
     }
 
-    nav ul {
-        flex-direction: column;  /* Stack navigation items vertically */
+    .content-section{
+        display:none;
+    }
+
+    .courses-section{
+        display:none;
+    }
+    
+    .thesis-exhibits-section{
+        display:none;
+    } 
+
+    .footer-section{
+        display:none;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Nanum Gothic Coding", system-ui;
+        font-weight: 100%;
+        font-style: normal;
+        background-color: #c9c8c8; 
+    }
+
+    .header-Desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        height: 64px;
+        background-color: #fff;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .logo_home{
+        display: flex;
         align-items: center;
     }
 
+    .logo_home img {
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .logo_home span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .logo_home .academy {
+        color: gray;
+        font-weight: normal;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
     nav ul li {
-        margin-left: 0;
-        margin-bottom: 12px;
+        margin-left: 24px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+        color: #0dd6fa; 
     }
 
     .Home-page h3 {
-        font-size: 1.4rem;  /* Slightly reduce the font size for smaller screens */
+        color: #6b4e16;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
 
     .Home-grid {
-        grid-template-columns: 1fr;  /* Ensure items stack in a single column on small screens */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        border-radius: 5px; /* ขอบมน */
+
+    }
+
+    .Home-item {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .Home-item img {
+        width: 50%;
+        height: auto;
+        border-radius: 5px;
+        margin-left: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
 
     .Home-item span {
-        margin: 10px;
+        width: 50%;
+        height: auto;
+        margin-left: 0px;
     }
-    
-    .Home-item h3 {
-        font-size: 1rem;
-        color: #333;
+
+    .Home-item h1 {
+        margin: 2%;
+        padding: 1%;
     }
-    
+
     .Home-item a {
         display: inline-block;
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #ffffff;
         text-decoration: none;
         background-color: #333;
         padding: 1rem;
     }
 
-    .Home-item img {
-        width: 55%;
-        height: auto;
-        border-radius: 5px;
-        margin-right: 15px;
+    .Home-item a:hover {
+        color: #0dd6fa; 
     }
-    
+
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+
+    .page1-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px;
+        background-color: #ffffff;
+    }
+
+    .content-container {
+        display: flex;
+        width: 50%; /* Main section width */
+        margin-right: 40px;
+    }
+
+    .main1-image img {
+        width: 105%;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 24px;
+    }
+
+    .text-content {
+        padding: 24px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 32px;
+    }
+
+    .text-content p {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+
+    .text-content span {
+        font-size: 1rem;
+        color: #888;
+    }
+
+    .side1-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        width: 50%; /* Side content width */
+    }
+
+    .box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .box img {
+        width: 35%;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 16px;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+        align-items: center;     /* จัดให้อยู่กึ่งกลางแนวนอน */
+        text-align: center;      /* จัดข้อความให้อยู่กึ่งกลางในบล็อก */
+        height: 100%;            /* ให้บล็อกมีความสูงเต็มพื้นที่ */
+        width: 100%;
+    }
+
+    .text-box h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .text-box p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .text-box a {
+        color: #0dd6fa;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .text-box a:hover {
+        text-decoration: underline;
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+
+    .page2-header {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 32px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 32px; /* Spacing between grid items */
+        padding: 0 72px; /* Padding on the sides */
+    }
+
+    .grid-item {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .course-info {
+        padding: 16px;
+    }
+
+    .course-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .course-info p {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-style: Bold;
+    }
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+
+    .page3-header{
+        background-color: white;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 32px;
+        text-align: center;
+        padding-top: 32px;
+    }
+
+    .content-area {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    /* Video section styling */
+    .video-section {
+        flex: 60%;
+        padding-left: 24px;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Right column content */
+    .right-column {
+        flex: 40%; /* 40% of the space */
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-right: 15px;
+    }
+
+    /* Individual content blocks */
+    .content-block {
+        display: flex;
+        gap: 16px;
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-block img {
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    .content-text {
+        flex-grow: 1;
+    }
+
+    .content-text h2 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .content-text p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Bottom text styling */
+    .bottom-text {
+        margin-top: 32px;
+    }
+
+    .bottom-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .bottom-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        padding-left: 24px;
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    .footer1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .footer1 .terms-section {
+        display: flex;
+        gap: 20px; /* ระยะห่างระหว่าง Terms กับ Privacy */
+    }
+
+    .footer1 .terms {
+        color: #000000;
+        cursor: pointer;
+    }
+
+    .footer1 .terms:hover {
+        text-decoration: underline;
+    }
+
+    /* ให้แน่ใจว่าฟุตเตอร์อยู่ที่ด้านล่างของหน้าจอ */
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    /* Media Queries for iPhone 12 Pro Max (390px x 844px) */
+
+    @media (max-width: 400px) {
+        header {
+            flex-direction: column;  /* Stack the logo and navigation vertically */
+            padding: 10px 16px;
+            height: auto;
+        }
+
+        .logo_home {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            flex-direction: column;  /* Stack navigation items vertically */
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 0;
+            margin-bottom: 12px;
+        }
+
+        .Home-page h3 {
+            font-size: 1.4rem;  /* Slightly reduce the font size for smaller screens */
+        }
+
+        .Home-grid {
+            grid-template-columns: 1fr;  /* Ensure items stack in a single column on small screens */
+        }
+
+        .Home-item span {
+            margin: 10px;
+        }
+        
+        .Home-item h3 {
+            font-size: 1rem;
+            color: #333;
+        }
+        
+        .Home-item a {
+            display: inline-block;
+            font-size: 1rem;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .Home-item img {
+            width: 55%;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        
+    }
 }
+
+
+
+

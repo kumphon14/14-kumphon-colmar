@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColmarAcademy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class ="header-Desktop">
         <div class="logo_home">
             <img src="images/ic-logo.svg" alt="Logo">
             <span>COLMAR<span class="academy">ACADEMY</span></span>
@@ -30,7 +31,7 @@
             <div class="Home-page">
                 <div class="Home-grid">
                     <div class="Home-item">
-                        <img src="images/banner.jpg" alt="banner">
+                        <img src="images/banner.jpg" alt="">
                         <span>
                             <span class = "banner">
                             <h1><strong>Learn something</strong></h1>
@@ -204,15 +205,127 @@
 
     <hr>
 
-    <footer>
+    <footer class="footer1">
         <span>&copy; 2016 Colmar Academy. All rights reserved.</span> 
         <div class="terms-section">
             <span class="terms">Terms</span>
             <span class="terms">Privacy</span>
         </div>
     </footer>
+ <!------------------------------------------------------------------------------>   
+    <header class="main-header">
+         <div class="header-content">
+            <nav class="nav-icons">
+            <!-- Make each logo and icon clickable -->
+            <a href="#" class="logo-link">
+                <img src="images/ic-logo.svg" alt="Logo" class="logo">
+            </a>
+            <a href="#" class="icon-link">
+                <img src="images/ic-on-campus.svg" alt="Icon 2">
+            </a>
+            <a href="#" class="icon-link">
+                <img src="images/ic-online.svg" alt="Icon 3">
+            </a>
+            <a href="#" class="icon-link">
+                <img src="images/ic-login.svg" alt="Icon 4">
+            </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-banner">
+        <img src="images/banner.jpg" alt="Main Image" class="image-banner">
     
+        <div class="content-banner">
+            <h1>Explore Knowledge Every Day</h1>
+            <p>Discover new insights with us, and unlock your potential.</p>
+            <button class="button-start">Started Here</button>
+        </div>
+    </section>
+
+    <section class="content-section">
+    <!-- First Card (Orientation Date) -->
+    <div class="content-card">
+        <img src="images/information-orientation-mobile.jpg" alt="Orientation Date" class="card-image">
+        <div class="card-content">
+            <h2>Orientation Date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+
+    <!-- Second Card (Our Campus) -->
+    <div class="content-card">
+        <img src="images/information-campus-mobile.jpg" alt="Our Campus" class="card-image">
+        <div class="card-content">
+            <h2>Our Campus</h2>
+            <p>Find which campus is close by you</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+
+    <div class="special-guest-lecture"></div>
+        <img src="images/information-guest-lecture-mobile.jpg" alt="special-guest-lecture" class="card-image">
+        <div class="card-content">
+            <h2>Special guest lecture</h2>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+    </section>
+
+    <header class="courses-section">
+    <h1>Start learning</h1>
+    </header>
+
+
+    <section class="courses-section">
+    <!-- Box 1: Software Engineering -->
+    <a href="#" class="course-box">
+        <h2>Software Engineering</h2>
+    </a>
+
+    <!-- Box 2: Computer Art -->
+    <a href="#" class="course-box">
+        <h2>Computer Art</h2>
+    </a>
+
+    <!-- Box 3: Design -->
+    <a href="#" class="course-box">
+        <h2>Design</h2>
+    </a>
+
+    <!-- Box 4: Data -->
+    <a href="#" class="course-box">
+        <h2>Data</h2>
+    </a>
+
+    <!-- Box 5: Business -->
+    <a href="#" class="course-box">
+        <h2>Business</h2>
+    </a>
+
+    <!-- Box 6: Marketing -->
+    <a href="#" class="course-box">
+        <h2>Marketing</h2>
+    </a>
+    </section>
+
+    <section class="thesis-exhibits-section">
+        <!-- Title -->
+        <h1>Thesis Exhibits</h1>
     
- 
+        <!-- Video -->
+        <div class="video-frame-container">
+            <iframe width="100%" height="315" src="videos/thesis.mp4" 
+                title="Video Player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <p>&copy; 2016 Colmar Academy. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

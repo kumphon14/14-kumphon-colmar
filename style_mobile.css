@@ -1,272 +1,339 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style_mobile.css for Mobile*/
+@media (max-width: 430px) {
 
-body {
-    font-family: "Nanum Gothic Coding", system-ui;
-    background-color: #ffffff;
-    color: #333;
-}
+    .header-Desktop {
+        display:none ;
+    }
 
-/* Header */
-.main-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    background-color: white;
-    height: 64px;
-}
+    .Home-container{
+       display:none
+    }
 
-.header-content {
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-}
+    .page1-header{
+        display:none ;
+    }
 
-.logo {
-    height: 48px; 
-}
+    .page2-header{
+        display:none ;
+    }
 
-.nav-icons img {
-    height: 48px; 
-    margin-left: 20px; /
-}
+    .page3-header{
+        display:none ;
+    }
+
+    .footer1{
+        display:none ;
+    }
 
 
-/* Main Section */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.main-section {
-    padding: 24px 10px;
-    background: rgb(198, 198, 198);
-}
+    body {
+        font-family: "Nanum Gothic Coding", system-ui;
+        background-color: #ffffff;
+        color: #333;
+    }
 
-.main-image {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 32px;
-}
-
-.text-section {
-    text-align: center;
-    padding: 16px 0;
-}
-
-.text-section h1 {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    color: #333;
-}
-
-.text-section p {
-    font-size: 1rem;
-    margin-bottom: 24px;
-    color: #666;
-}
-
-.cta-button {
-    background-color: #888;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background-color: #555;
-}
-
-/* Media Query for iPhone 12 Pro Max (400px x 850px) */
-@media (max-width: 400px) {
+    /* Header */
     .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        background-color: white;
         height: 64px;
     }
 
-    .main-section {
-        padding: 32px 16px;
+    .header-content {
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
     }
 
-    .text-section h1 {
-        font-size: 1.4rem;
+    .logo {
+        height: 48px; 
     }
 
-    .cta-button {
+    .nav-icons img {
+        height: 48px; 
+        margin-left: 20px; /
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+
+    /* Content Section */
+    .content-section {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* Spacing between cards */
+    }
+
+    /* Content Card Styling */
+    .content-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card-image {
         width: 100%;
-        font-size: 1.2rem;
+        height: auto;
     }
-}
 
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-/* Content Section */
-.content-section {
-    padding-top: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Spacing between cards */
-}
-
-/* Content Card Styling */
-.content-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 16px;
-}
-
-.card-content h2 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.card-content p {
-    font-size: 1rem;
-    margin-bottom: 16px;
-    color: #555;
-}
-
-.read-more {
-    color: #0dd6fa;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-/* Media Query for iPhone 12 Pro Max (400px x 850px) */
-@media (max-width: 400px) {
-    body {
+    .card-content {
         padding: 16px;
     }
 
     .card-content h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        color: #333;
     }
 
     .card-content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-bottom: 16px;
+        color: #555;
     }
 
     .read-more {
-        font-size: 0.9rem;
+        color: #0dd6fa;
+        text-decoration: none;
+        font-size: 1rem;
     }
-}
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
+
+    /* Media Query for iPhone 12 Pro Max (400px x 850px) */
+  
+        body {
+            padding: 16px;
+        }
+
+        .card-content h2 {
+            font-size: 1.1rem;
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            font-size: 0.9rem;
+        }
+    
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
-/* Header Section */
-header {
-    margin-bottom: 32px;
-}
-
-header h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
-/* Courses Section */
-.courses-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Space between boxes */
-}
-
-.course-box {
-    background-color: #ddd;
-    padding: 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-/* Hover and click effects */
-.course-box:hover {
-    background-color: #ccc;
-    transform: scale(1.05); /* Slight zoom-in effect */
-}
-
-.course-box:active {
-    background-color: #bbb;
-    transform: scale(0.98); /* Slightly shrink when clicked */
-}
-
-/* Media Query for iPhone 12 Pro Max (400px x 850px) */
-@media (max-width: 400px) {
+    /* Header Section */
+    header {
+        margin-bottom: 32px;
+    }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        color: #333;
+    }
+
+    /* Courses Section */
+    .courses-section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; /* Space between boxes */
     }
 
     .course-box {
-        font-size: 1.3rem;
-        padding: 20px;
+        background-color: #ddd;
+        padding: 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
+
+    /* Hover and click effects */
+    .course-box:hover {
+        background-color: #ccc;
+        transform: scale(1.05); /* Slight zoom-in effect */
+    }
+
+    .course-box:active {
+        background-color: #bbb;
+        transform: scale(0.98); /* Slightly shrink when clicked */
+    }
+
+    /* Media Query for iPhone 12 Pro Max (400px x 850px) */
+    
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        .course-box {
+            font-size: 1.3rem;
+            padding: 20px;
+        }
+  
 }
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/* ตกแต่งรูปภาพ */
+.image-banner {
+width: 100%;
+max-width: 100%;  /* ปรับขนาดให้เต็มความกว้างของหน้าจอ */
+height: auto;
+border-radius: 10px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาบางลง */
+}
+
+/* ตกแต่งเนื้อหา */
+.content-banner {
+text-align: center;
+max-width: 100%;  /* ปรับขนาดเนื้อหาให้เหมาะสม */
+}
+
+/* ตกแต่งหัวข้อหลัก */
+.content-banner h1 {
+font-size: 1.8rem;  /* ปรับขนาดฟอนต์ให้เหมาะกับหน้าจอเล็ก */
+font-weight: bold;
+color: #333;
+margin-bottom: 15px;
+}
+
+/* ตกแต่งข้อความเนื้อหา */
+.content-banner p {
+font-size: 1rem;  /* ปรับขนาดฟอนต์ข้อความเนื้อหา */
+color: #666;
+margin-bottom: 20px;
+line-height: 1.5;
+}
+
+/* ตกแต่งปุ่ม */
+.button-start {
+font-size: 1rem;  /* ปรับขนาดปุ่มให้เล็กลง */
+color: white;
+background-color: #4caf50;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.button-start:hover {
+background-color: #969696;
+}
+
+@media (max-width: 430px) {
+/* ปรับขนาด Section */
+.section-banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
+/* ปรับขนาดรูปภาพ */
+.image-banner {
+    width: 100%;
+    height: auto;
+}
+
+/* ปรับขนาดหัวข้อหลัก */
+.content-banner h1 {
+    font-size: 1.6rem;  /* ปรับฟอนต์หัวข้อให้เล็กลงอีก */
+}
+
+/* ปรับขนาดปุ่ม */
+.button-start {
+    font-size: 1rem;
+    padding: 12px 24px;  /* เพิ่มขนาดปุ่มเล็กน้อยเพื่อความชัดเจน */
+    width: 100%;  /* ทำให้ปุ่มเต็มความกว้างหน้าจอ */
+}
+}
+
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
 /* Thesis Section */
-.thesis-section {
-    margin-bottom: 32px;
+.thesis-exhibits-section {
+margin: 20px auto;
+padding: 20px;
+text-align: center;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.thesis-section h1 {
-    font-size: 2rem;
-    margin-bottom: 16px;
+/* Title styling */
+.thesis-exhibits-section h1 {
+font-size: 2rem;
+color: #333;
+margin-bottom: 20px;
 }
 
-/* Video Container */
-.video-container {
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Video container */
+.video-frame-container {
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Section */
-.footer {
-    margin-top: 24px;
-    padding: 16px;
-    background-color: #f9f9f9;
-    color: #666;
+/* Adjust iframe to fit within container */
+.video-frame-container iframe {
+width: 100%;
+height: auto;
 }
 
-.footer p {
-    font-size: 0.9rem;
+@media (max-width: 430px) {
+.thesis-exhibits-section {
+    padding: 15px;
 }
 
-/* Media Query for iPhone 12 Pro Max (400px x 850px) */
-@media (max-width: 400px) {
-    body {
-        padding: 16px;
-    }
+.thesis-exhibits-section h1 {
+    font-size: 1.6rem;  /* ลดขนาดหัวข้อสำหรับหน้าจอมือถือ */
+}
 
-    .thesis-section h1 {
-        font-size: 1.8rem;
-    }
+.video-frame-container iframe {
+    height: 250px;  /* ลดขนาดความสูงของ iframe ให้พอดีกับหน้าจอมือถือ */
+}
+}
 
-    .video-container iframe {
-        height: 280px;
-    }
+.footer-section {
+background-color: #333;
+color: #ffffff;
+padding: 20px;
+text-align: center;
+font-size: 1rem;
+border-top: 2px solid #555;
+}
 
-    .footer p {
-        font-size: 0.8rem;
-    }
+/* Footer Text */
+.footer-section p {
+margin: 0;
+font-size: 1rem;
+}
+
+/* Media Query for iPhone 14 Pro Max (430px x 932px) */
+@media (max-width: 430px) {
+.footer-section {
+    padding: 15px;  /* ลดขนาด padding ในมือถือ */
+}
+
+.footer-section p {
+    font-size: 0.9rem;  /* ปรับขนาดฟอนต์ให้เล็กลงสำหรับมือถือ */
+}
 }
