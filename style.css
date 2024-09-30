@@ -95,16 +95,25 @@ nav ul li a:hover {
 .Home-item span {
     width: 50%;
     height: auto;
-    margin-left: 15px;
+    margin-left: 0px;
+}
+
+.Home-item h1 {
+    margin: 2%;
+    padding: 1%;
 }
 
 .Home-item a {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #ffffff;
     text-decoration: none;
     background-color: #333;
     padding: 1rem;
+}
+
+.Home-item a:hover {
+    color: #0dd6fa; 
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
@@ -154,8 +163,8 @@ nav ul li a:hover {
 .side1-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 45%; /* Side content width */
+    justify-content: normal;
+    width: 50%; /* Side content width */
 }
 
 .box {
@@ -270,6 +279,8 @@ h1 {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 32px;
+    text-align: center;
+    padding-top: 32px;
 }
 
 .content-area {
@@ -280,7 +291,8 @@ h1 {
 
 /* Video section styling */
 .video-section {
-    flex: 60%; /* 60% of the space */
+    flex: 60%;
+    padding-left: 24px;
 }
 
 .video-section iframe {
@@ -295,6 +307,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-right: 15px;
 }
 
 /* Individual content blocks */
@@ -319,10 +332,12 @@ h1 {
 .content-text h2 {
     font-size: 1.25rem;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .content-text p {
     font-size: 1rem;
+    text-align: center;
 }
 
 /* Bottom text styling */
@@ -333,11 +348,14 @@ h1 {
 .bottom-text h2 {
     font-size: 1.5rem;
     margin-bottom: 16px;
+    padding-left: 24px;
 }
 
 .bottom-text p {
     font-size: 1rem;
     line-height: 1.5;
+    margin-bottom: 15px;
+    padding-left: 24px;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
